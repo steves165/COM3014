@@ -1,0 +1,340 @@
+/*
+    Document   : screen
+    Created on : 14-Mar-2013, 10:35:37
+    Author     : dan
+    Description:
+        Stylesheet for on browser display.
+*/
+
+/* Trim the margin on a single hr element */
+hr.nomargin { margin: 0; }
+
+h1 {color:#f6f7f7; 		}
+/*h2{color:#f6f7f7; padding-left:20px; padding-top:10px;}*/
+/*h5{color:#f6f7f7; padding-left:20px; padding-top:6px; font-size: large; font-family:"Helvetica Neue", Arial, Helvetica, sans-serif; }*/
+h4{color:#f6f7f7; 	padding-left:20px;	}
+
+p{ padding-left:20px; padding-top:10px;}
+
+
+
+
+
+
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.leftmenu {background-color: #0D4F8B; height:400px;  -moz-border-radius: 15px;
+border-radius: 15px; }
+
+
+.leftmenu ul{list-style-type: none; }
+.leftmenu ul li a {color: #FFFFFF; text-decoration: none; display: block; font-size:large;  }
+
+.leftmenu ul li a:hover{
+	color:#FF7722;
+}
+
+.content {
+	min-height: 100%;
+	position: relative;
+	overflow: auto;
+	z-index: 0;
+}
+
+.background {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.top_block {
+	width: 100%;
+	display: block;
+}
+
+.bottom_block {
+	position: absolute;
+	width: 100%;
+	display: block;
+	bottom: 0;
+}
+
+.left_block {
+	display: block;
+	float: left;
+}
+
+.right_block {
+	display: block;
+	float: right;
+}
+
+.center_block {
+	display: block;
+	width: auto;
+}
+
+.block_title {
+	width: 90%;
+	height: 60px;
+	background-color: #0D4F8B;
+
+}
+
+.block_title a {text-decoration:none;
+                color:#FFFFFF}
+
+.block_companydetails {
+	width: 90%;
+	height: 40px;
+	background-color: #708090;;
+}
+
+.block_description {
+	width: 90%;
+	height: 200px;
+	background-color: #F1F1F1;
+}
+
+.block_footer {
+	width: 90%;
+	height: 60px;
+	background-color: #0D4F8B;
+}
+
+#wrap {
+		width:650px;
+		margin:0 auto;
+		background-color: #F1F1F1;
+
+	}
+	#header {
+                padding:5px 10px;
+		background-color: #0D4F8B;
+	}
+
+	#nav {
+		padding:5px 10px;
+		background:#708090;
+	}
+
+	#main {
+		float:left;
+		width:60%;
+
+		padding:10px;
+		background:#F1F1F1;
+               border-right: 4px solid darkgray;
+	}
+
+        #companylocations {
+            background:#F1F1F1;
+            padding: 10px;
+        }
+
+	#sidebar {
+		float:right;
+		width:33.80%;
+
+		padding:10px;
+		background:#F1F1F1;
+
+	}
+	#footer {
+		clear:both;
+		padding:5px 10px;
+		background-color: #0D4F8B;
+	}
+
+	* html #footer {
+		height:1px;
+	}
+
+
+
+.block_1 {
+	width: 100%;
+	height: 300px;
+	background-color: #F0F0F0;;
+}
+
+.background.block_4 {
+	height: auto !important;
+	padding-bottom: 0;
+	left: 0;
+	width: 30%;
+	background-color: #F0F0F0;
+}
+
+.block_4 {
+	height: auto;
+	width: 30%;
+	padding-bottom: 0px;
+}
+
+.background.block_5 {
+	height: auto !important;
+	padding-bottom: 0;
+	right: 0;
+	width: 70%;
+	background-color: #F0F0F0;
+}
+
+.block_5 {
+	height: auto;
+	width: 70%;
+	padding-bottom: 0px;
+}
+
+
+
+
+
+.block_2 {
+	width: 100%;
+	height: 199px;
+	background-color: #EBEBEB;
+}
+
+.background.block_7 {
+	height: auto !important;
+	padding-bottom: 0;
+	left: 0;
+	width: 50%;
+	background-color: #EBEBEB;
+}
+
+.block_7 {
+	height: auto;
+	width: 50%;
+	padding-bottom: 0px;
+}
+
+.background.block_6 {
+	height: auto !important;
+	padding-bottom: 0;
+	right: 0;
+	width: 50%;
+	background-color: #E0E0E0;
+}
+
+.block_6 {
+	height: auto;
+	width: 50%;
+	padding-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+#head
+{
+    min-width:100%;
+    height:55px;
+    clear:both;
+    background-color:#0D4F8B;
+    color:#F2F2F2;
+    padding:10px;
+    padding-left:0;
+    padding-right:0;
+    -moz-box-shadow: 0px 0px 15px #333333;
+	-webkit-box-shadow: 0px 0px 15px #333333;
+	letter-spacing: -0.05em;
+}
+
+
+.clear{
+
+    position:relative;
+    margin-top:-35px;
+    margin-left:700px;
+}
+
+.clear ul li{
+	display:inline;
+
+}
+
+.clear ul li a,
+.clear ul li a:visited{
+	color:#CCC;
+	display:block;
+	float:left;
+	font-size:1.65em;
+	font-weight:bold;
+	margin:5px 2px;
+	padding:7px 10px 4px;
+	text-transform:uppercase;
+        text-decoration:none;
+}
+
+.clear ul li a:hover{
+	color:#FF7722;
+}
+
+.clear, .clear ul li a{
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+.title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	font-weight: normal;
+	color: #989b9c;
+	margin-bottom: 20px;
+        margin-top: 20px;
+}
+.title span {
+	color: #686868;
+}
+
+.subtitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	font-weight: normal;
+	color: #0b90d6;
+	margin-bottom: 15px;
+
+}
+
+
+.img {
+      margin-top: 20px;
+        margin-left: 20px;
+}
+
+#job-map-canvas {
+    height: 400px;
+    width: 100%;
+}
+
+#dynamic-jobs li {
+    border-bottom: 2px #686868 solid;
+    margin: 0.5em;
+    padding: 0.5em;
+    font-size: 12px;
+}
+#dynamic-jobs .jobtitle {
+    font-size: 16px;
+    font-weight: bold;
+}
+.companyinfo {
+    font-size: 14px;
+}

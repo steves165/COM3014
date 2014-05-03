@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+
+	body {text-align:center;}
+	body { background-color: #CCCCCC; text-align:center; font-family:Arial, Helvetica, sans-serif;}
+	div.center {
+	background-color:#FFFFFF;
+	margin:1em;
+	border-width:medium;
+	text-align:left;
+	margin:0 auto;
+	width:85%;
+	padding:20px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+	div.header {background-color:#FFFFFF; margin:1em; border-width:medium; text-align:center; margin:0 auto; width:65%; padding:20px; font-family:Arial, Helvetica, sans-serif;}
+	div.center1 {background-color:#FFFFFF; margin:1em; border-width:medium; text-align:center; margin:0 auto; width:100%; font-family:Arial, Helvetica, sans-serif;}
+	div.clock {
+	font-size:10px;
+	font-weight:100;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#000000;
+	width:100%;
+	margin:auto;
+}
+	.main {background-color:#FFFFFF; text-align:center; font:Arial, Helvetica, sans-serif; font-size:16px; width:95%; margin:auto; padding:15px; overflow:auto; height:800px;}
+	
+	.clockMain {background-color:#CCCCCC; border-width:medium; border: #000000; font:Arial, Helvetica, sans-serif; font-size:16px;}
+	
+	h1 {font-family:Arial, Helvetica, sans-serif; font-size:28px; text-align:center; color:#339999}
+	table {text-align: center;}
+	h2 {font-family:Arial, Helvetica, sans-serif; font-size:18px; text-align:center;}
+	h6.footer {font-family:Arial, Helvetica, sans-serif; font-size:10px; text-align:center;}
+	p.center {text-align:center; font-size:16px;}
+	a:link {text-decoration:none; color:black;}
+	a:visited {text-decoration:none; color: black;}
+	a:hover {text-decoration:none; color: #339999;}
+	a:active {text-decoration:none; color: #3399CC;}
+	
+	.footer {text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:9px; color:#000000;}
+	
+	.button {font-family:Arial, Helvetica, sans-serif; font-size:36px; height: 100px; width: 300px;}
+	.quit {font-family:Arial, Helvetica, sans-serif; font-size:36px; height: 50px;}
+	.textBox {font-family:Arial, Helvetica, sans-serif; font-size:42px; height: 80px; width: 300px; text-align:center}
+	
+	.game {font-family:Arial, Helvetica, sans-serif; font-size:24px; font-weight:bold;}
+	
+	#deviant {color: #FF0000;}
+	
+	input { 
+            border: 2px solid #CCCCCC; 
+            -moz-border-radius: 4px; 
+            -webkit-border-radius: 4px;
+            -webkit-transition: all 0.40s ease-in-out; 
+            -moz-transition: all 0.40s ease-in-out; 
+            -webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 0); 
+            -moz-box-shadow: 0 0 5px rgba(81, 203, 238, 0); 
+        }
+	.correct:focus { 
+            outline:none; 
+            border-color:#9ecaed;
+            -webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1); 
+            -moz-box-shadow: 0 0 5px rgba(81, 203, 238, 1); 
+        }  
+        .wrong { 
+            outline:none; 
+            border-color:#ff0000; 
+            box-shadow:0 0 10px #ff0000; 
+        }  
+	
+        legend {font-size: 48px; font-weight: bold;}
+	p.header {text-align:center; text-align:center; font-weight:bold; font-size:larger;}
+	p.center {text-align:center; font-size:18px; color:black; font-weight:bolder}
+	p.center1 {text-align:center; color:black;}
+	p.right1 {text-align:right; color:black;}
+	p.center2 {text-align:center; font-size:2.00em; color:black; font-weight:bolder}
+
+	
+	footer {font-size:0.5em; text-align:center; color:white}
+	#clock { font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight:bold; color: #339999; padding: 9px; text-align:center;}
+	#clock1 { font-family: Arialrial, Helvetica, sans-serif; font-size: 10em; color: #339999; font-weight:bold; padding:2px; background-color: #CCCCCC; text-align:center;}
+	

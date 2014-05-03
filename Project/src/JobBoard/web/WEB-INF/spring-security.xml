@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+            xmlns:sec="http://www.springframework.org/schema/security"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:context="http://www.springframework.org/schema/context"
+            xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+            http://www.springframework.org/schema/security
+            http://www.springframework.org/schema/security/spring-security-3.1.xsd
+            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+    <bean name="userService" class="group1.service.UserService"/>
+    <bean name="passwordEncoder" id="passwordEncoder" class="org.springframework.security.crypto.password.StandardPasswordEncoder"/>
+
+    <sec:http pattern="/login.htm" security="none"/>
+    <sec:http pattern="/loginfailed.htm" security="none"/>
+    <sec:http pattern="/register.htm" security="none"/>
+    <sec:http pattern="/initRegisterForm.htm" security="none"/>
+    <sec:http pattern="/" security="none"/>
+    <sec:http pattern="/static/**" security="none"/>
+    <sec:http pattern="/api/**">
+        <sec:intercept-url pattern="/**" access="ROLE_USER"/>
+        <sec:http-basic/>
+    </sec:http>
+    <sec:http auto-config="true">
+        <sec:intercept-url pattern="/**" access="ROLE_USER" />
+        <sec:form-login login-page="/login.htm" default-target-url="/search.htm"
+                authentication-failure-url="/loginfailed.htm" />
+        <sec:logout logout-success-url="/login.htm" />
+    </sec:http>
+
+    <sec:authentication-manager>
+        <sec:authentication-provider user-service-ref="userService">
+            <sec:password-encoder ref="passwordEncoder"/>
+        </sec:authentication-provider>
+    </sec:authentication-manager>
+</beans>

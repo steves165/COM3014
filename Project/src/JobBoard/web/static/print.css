@@ -1,0 +1,11 @@
+/* 
+    Document   : print
+    Created on : 14-Mar-2013, 10:37:33
+    Author     : dan
+    Description:
+        Stylesheet used when printing the HTML pages
+*/
+
+/* Trim the margin on a single hr element */
+hr.nomargin { margin: 0; }
+
